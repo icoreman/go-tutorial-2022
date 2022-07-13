@@ -67,8 +67,8 @@ func (r *InMemoryTodoRepository) Update(todo *TodoForCreate) (t *Todo, err error
 	for i, t := range r.Todos {
 		if t.Id == todo.Id {
 			newTodo := &Todo{
-				Id:    todo.Id,
-				Url:   todo.Url,
+				Id:    t.Id,
+				Url:   t.Url,
 				Title: todo.Title,
 			}
 			if todo.Completed == nil {

@@ -67,6 +67,7 @@ func updateTodoHandler(c echo.Context) (err error) {
 	if err = c.Bind(todoForUpdate); err != nil {
 		return err
 	}
+	todoForUpdate.Id = id
 
 	if updatedTodo, err := todoRepository.Update(todoForUpdate); err != nil {
 		return c.JSON(http.StatusNotFound, "Todo note was not found")
