@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	port := "8081"
+	port := "8080"
 
 	e := echo.New()
 	e.Pre(middleware.RemoveTrailingSlash())
