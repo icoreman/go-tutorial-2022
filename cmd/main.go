@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"github.com/Rookout/go-tutorial-2022/pkg/todos"
-	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )
 
