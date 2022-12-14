@@ -2,11 +2,16 @@ package main
 
 import (
 	"fmt"
+	rookout "github.com/Rookout/GoSDK"
 	"github.com/Rookout/go-tutorial-2022/pkg/todos"
 	"github.com/labstack/echo/v4/middleware"
 )
 
 func main() {
+	rookout.Start(rookout.RookOptions{
+		Token:  "XXXXXXXXXXXXXXXX",
+		Labels: map[string]string{"env": "dev"},
+	})
 	port := "8080"
 
 	e := echo.New()
