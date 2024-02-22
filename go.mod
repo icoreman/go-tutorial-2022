@@ -3,12 +3,12 @@ module github.com/Rookout/go-tutorial-2022
 go 1.18
 
 require (
+	github.com/Rookout/GoSDK v0.1.33
 	github.com/labstack/echo/v4 v4.9.1
 	github.com/lithammer/shortuuid v3.0.0+incompatible
 )
 
 require (
-	github.com/Rookout/GoSDK v0.1.33 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/fallais/logrus-lumberjack-hook v0.0.0-20210917073259-3227e1ab93b0 // indirect
 	github.com/go-errors/errors v1.4.1 // indirect
